@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f3ec">
+  <title>내 안의 숨은 몬스터 | MBTI 성향 테스트</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-icon">✦</span> MONSTER INSIDE</a><span class="header-note">작은 발견, 새로운 나</span></header>
+    <main id="main" tabindex="-1">
+      <section id="start-screen" class="screen intro" aria-labelledby="intro-title">
+        <div class="intro-copy"><span class="eyebrow">나도 몰랐던 나를 만나는 시간</span><h1 id="intro-title">내 안의<br>숨은 <span>몬스터</span></h1><p class="lead">네 안에 잠들어 있는 특별한 능력.<br>어떤 몬스터가 깨어날지 궁금하지 않아?</p><div class="test-meta"><span>✦ 16가지 몬스터</span><span>◷ 약 3분</span><span>✓ 16개 질문</span></div><button id="start-button" class="button primary">내 몬스터 깨우기 <span aria-hidden="true">↗</span></button><p class="small-note">가입 없이, 가볍게 나를 발견해봐!</p></div>
+        <div class="monster-scene" aria-label="초록색의 귀여운 몬스터 일러스트" role="img"><span class="scene-label">MEET YOUR INNER MONSTER</span><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span><span class="floating-note">너의 가능성이 깨어나는 중!</span><div class="monster"><i class="horn horn-left"></i><i class="horn horn-right"></i><div class="monster-body"><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="cheek cheek-left"></span><span class="cheek cheek-right"></span><span class="mouth"></span><span class="belly">✦</span></div><i class="foot foot-left"></i><i class="foot foot-right"></i></div><span class="scene-bottom">조금 엉뚱해도 괜찮아. 그게 너의 매력이니까.</span></div>
+        <div class="intro-bottom"><span class="mini-icon">🌱</span><div><strong>성격보다 더 궁금한, 너의 가능성</strong><p>일상 속 선택으로 숨은 강점과 작은 성장 힌트를 찾아봐.</p></div></div>
+      </section>
+      <section id="quiz-screen" class="screen quiz" aria-labelledby="question-title" hidden>
+        <div class="quiz-top"><span class="eyebrow">몬스터를 깨우는 작은 선택</span><span id="question-counter"></span></div><div id="progress" class="progress" role="progressbar" aria-label="테스트 진행률" aria-valuemin="0" aria-valuemax="16"><div id="progress-fill"></div></div><p id="question-category" class="question-category"></p><h2 id="question-title" tabindex="-1"></h2><p class="question-help">평소의 너와 더 가까운 쪽을 골라줘.</p><div id="answers" class="answers"></div><div class="quiz-actions"><button id="previous-button" class="button secondary">← 이전 질문</button><button id="next-button" class="button primary" disabled>다음 질문 →</button></div><p class="quiz-hint">정답은 없어. 너다운 선택이면 충분해!</p>
+      </section>
+      <section id="result-screen" class="screen result" aria-labelledby="result-title" hidden>
+        <span class="eyebrow">드디어 깨어난 너의 숨은 몬스터</span><div id="result-emoji" class="result-emoji" aria-hidden="true"></div><span id="result-type" class="type-badge"></span><h1 id="result-title" tabindex="-1"></h1><p id="result-description" class="result-description"></p><div class="result-detail"><h2>✦ 너의 숨은 능력</h2><ul id="strengths"></ul><h2>🌱 오늘의 작은 성장 미션</h2><p id="mission"></p><h2>너의 선택이 그린 성향</h2><div id="traits" class="traits"></div><p class="ratio-note">각 성향당 4문항의 응답 비율이에요. 동점이면 해당 성향의 첫 질문 응답을 반영해요.</p></div><div class="result-actions"><button id="share-button" class="button primary">결과 공유하기 ↗</button><button id="restart-button" class="button secondary">↻ 다시 하기</button></div><p id="share-status" role="status" class="share-status"></p><div id="share-fallback" hidden><label for="share-text">아래 내용을 복사해서 공유해줘.</label><textarea id="share-text" readonly rows="4"></textarea></div>
+      </section>
+    </main>
+    <footer><span>© MONSTER INSIDE</span><p>자기 탐색을 위한 재미있는 테스트이며, 정식 MBTI 검사는 아니에요.</p></footer>
+  </div>
+</body>
+</html>
